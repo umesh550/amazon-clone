@@ -1,11 +1,6 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
-import HomePage from "./pages/HomePage";
-import SearchResult from "./pages/SearchResult";
-import ProductPage from "./pages/ProductPage";
-import Checkout from "./pages/Checkout";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {HomePage, SearchResult, ProductPage, Checkout} from './pages'
 
 import "./Server";
 const App = () => {

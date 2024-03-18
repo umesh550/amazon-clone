@@ -36,7 +36,7 @@ const Deals = () => {
     {
       id: 4,
       name: "Top Rated Wallets For Men's",
-      discount: "₹699 and under",
+      discount: "₹699 under",
       img: deal4,
     },
     {
@@ -77,7 +77,7 @@ const Deals = () => {
     },
   ];
   return (
-    <div className="bg-white m-4 p-4">
+    <div className="bg-white m-4 p-4 min-w-[1000px]">
       <div className="flex space-x-3 mb-2">
         <p className="text-xl font-semibold">Todays&apos;s Deals</p>
         <p className="text-sm text-blue-500 mt-[6px] hover:underline pointer-event-auto">

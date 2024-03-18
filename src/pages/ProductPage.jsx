@@ -1,8 +1,11 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import ProductDetails from "../components/ProductDetails";
+import { Link, useParams } from "react-router-dom";
+
 import { addToCart } from "../redux/cartSlice";
 import { useDispatch } from "react-redux";
+
+import { ProductDetails } from "../components";
+
 function ProductPage() {
   const dispatch = useDispatch();
   const { id } = useParams();
@@ -74,12 +77,14 @@ function ProductPage() {
                   <option value="">4</option>
                 </select>
               </div>
-              <button
-                onClick={() => dispatch(addToCart(addQuantityToProduct()))}
-                className="bg-yellow-300 w-[210px] mt-2 text-sm rounded-[30px] p-1 hover:bg-yellow-500"
-              >
-                Add to Cart
-              </button>
+              <Link to="/checkout">
+                <button
+                  onClick={() => dispatch(addToCart(addQuantityToProduct()))}
+                  className="bg-yellow-300 w-[210px] mt-2 text-sm rounded-[30px] p-1 hover:bg-yellow-500"
+                >
+                  Add to Cart
+                </button>
+              </Link>
               <button className="bg-[#FF8911] w-[210px] mt-2 text-sm rounded-[30px] p-1 hover:bg-orange-500">
                 Buy Now
               </button>

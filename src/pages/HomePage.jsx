@@ -1,7 +1,5 @@
-// import React from "react";
-import Card from "../components/Card";
-import Carousel from "../components/Carousel";
-
+import {Card, Deals, Carousel, CarouselProduct} from '../components'
+//Images
 import grid1 from "../assets/images/home_grid_1.jpg";
 import grid2 from "../assets/images/home_grid_2.jpg";
 import grid3 from "../assets/images/home_grid_3.jpg";
@@ -10,8 +8,6 @@ import grid5 from "../assets/images/home_grid_5.jpg";
 import grid6 from "../assets/images/home_grid_6.jpg";
 import grid7 from "../assets/images/home_grid_7.jpg";
 import grid8 from "../assets/images/home_grid_8.jpg";
-import CarouselProduct from "../components/CarouselProduct";
-import Deals from "../components/Deals";
 
 const HomePage = () => {
   return (
